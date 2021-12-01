@@ -31,7 +31,7 @@ func TestThirdGreaterThatFirst(t *testing.T) {
 }
 
 func TestExample(t *testing.T) {
-	res := CheckIncreased([]int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263})
+	res := CheckIncreased2([]int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263})
 	if res != 7 {
 		t.Fatalf("expected increase count to be 7 but was %d", res)
 	}
