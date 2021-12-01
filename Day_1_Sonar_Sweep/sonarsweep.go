@@ -74,5 +74,5 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(CheckIncreased(nums))
+	fmt.Println(PartTwo(nums))
 }
