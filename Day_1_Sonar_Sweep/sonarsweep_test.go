@@ -60,7 +60,7 @@ func TestPartTwoReturns1(t *testing.T) {
 
 func TestPartTwoReturns(t *testing.T) {
 	res := PartTwo([]int{199, 200, 208, 210, 200, 207, 240})
-	if res < 1 {
+	if res != 2 {
 		t.Fatalf("Expected 0 but got %d", res)
 	}
 }
