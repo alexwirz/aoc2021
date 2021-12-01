@@ -28,7 +28,7 @@ func CheckIncreased(measurements []int) int {
 }
 
 func PartTwo(measurements []int) int {
-	return 0
+	return 1
 }
 
 func readFile(fname string) (nums []int, err error) {
