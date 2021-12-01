@@ -57,3 +57,10 @@ func TestPartTwoReturns1(t *testing.T) {
 		t.Fatalf("Expected 0 but got %d", res)
 	}
 }
+
+func TestPartTwoReturns(t *testing.T) {
+	res := PartTwo([]int{199, 200, 208, 210, 200, 207, 240})
+	if res < 1 {
+		t.Fatalf("Expected 0 but got %d", res)
+	}
+}
