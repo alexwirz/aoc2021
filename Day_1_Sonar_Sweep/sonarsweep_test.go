@@ -66,8 +66,8 @@ func TestPartTwoReturns(t *testing.T) {
 }
 
 func TestCompleteExample(t *testing.T) {
-	res := PartTwo([]int{199, 200, 208, 210, 200, 207, 240})
-	if res != 2 {
+	res := PartTwo([]int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263})
+	if res != 5 {
 		t.Fatalf("Expected 2 but got %d", res)
 	}
 }
