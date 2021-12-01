@@ -47,6 +47,6 @@ func TestWave(t *testing.T) {
 func TestPartTwoReturns0(t *testing.T) {
 	res := PartTwo([]int{})
 	if res != 0 {
-		t.Fatal("asd")
+		t.Fatalf("Expected 0 but got %d", res)
 	}
 }
