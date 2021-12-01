@@ -4,7 +4,7 @@ import "fmt"
 
 func CheckIncreased(measurements []int) int {
 	var count int = 0
-	var last int = 0
+	var last int = int(^uint(0) >> 1)
 	fmt.Printf("measurements: %v\n", measurements)
 	for i, v := range measurements {
 		if i == 0 {
