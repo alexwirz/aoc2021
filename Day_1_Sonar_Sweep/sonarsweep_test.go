@@ -65,6 +65,13 @@ func TestPartTwoReturns(t *testing.T) {
 	}
 }
 
+func TestCompleteExample(t *testing.T) {
+	res := PartTwo([]int{199, 200, 208, 210, 200, 207, 240})
+	if res != 2 {
+		t.Fatalf("Expected 2 but got %d", res)
+	}
+}
+
 func TestSum(t *testing.T) {
 	var testCases = []struct {
 		ns    []int
