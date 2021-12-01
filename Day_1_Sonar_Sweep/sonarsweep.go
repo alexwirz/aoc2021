@@ -28,8 +28,9 @@ func CheckIncreased(measurements []int) int {
 }
 
 func PartTwo(measurements []int) int {
-	//sums := [0]int{}
-	for i := 1; i < len(measurements); i++ {
+	var sums []int
+	for i := 1; i < len(measurements)-2; i++ {
+		sums = append(sums, Sum(measurements, i, i+2))
 	}
 	return 1
 }
