@@ -24,6 +24,10 @@ func CheckIncreased(measurements []int) int {
 }
 
 func CheckIncreased2(measurements []int) int {
+	if len(measurements) < 2 {
+		return 0
+	}
+
 	var count int = 0
 	var last int = int(^uint(0) >> 1)
 	fmt.Printf("measurements: %v\n", measurements)
