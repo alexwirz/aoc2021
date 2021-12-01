@@ -29,3 +29,10 @@ func TestThirdGreaterThatFirst(t *testing.T) {
 		t.Fatal("expected increase count to be 0")
 	}
 }
+
+func TestWave(t *testing.T) {
+	res := CheckIncreased([]int{12, 1, 14, 10, 42})
+	if res != 2 {
+		t.Fatal("expected increase count to be 0")
+	}
+}
