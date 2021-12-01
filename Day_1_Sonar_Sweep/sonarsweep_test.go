@@ -22,3 +22,10 @@ func TestSecondLessThanFirst(t *testing.T) {
 		t.Fatal("expected increase count to be 0")
 	}
 }
+
+func TestThirdGreaterThatFirst(t *testing.T) {
+	res := CheckIncreased([]int{12, 1, 14})
+	if res != 1 {
+		t.Fatal("expected increase count to be 0")
+	}
+}
