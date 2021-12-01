@@ -33,7 +33,7 @@ func PartTwo(measurements []int) int {
 		sums = append(sums, Sum(measurements, i, i+2))
 	}
 
-	return 1
+	return CheckIncreased(sums)
 }
 
 func Sum(numbers []int, start, end int) int {
