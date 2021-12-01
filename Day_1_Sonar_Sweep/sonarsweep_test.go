@@ -66,8 +66,20 @@ func TestPartTwoReturns(t *testing.T) {
 }
 
 func TestSumOfArrayWithThreeItems(t *testing.T) {
-	sum := Sum([]int{199, 200, 208}, 0, 2)
-	if sum != 607 {
-		t.Fatalf("Expected sum to be 607 but was %d", sum)
+	var testCases = []struct {
+		ns    []int
+		first int
+		last  int
+		sum   int
+	}{
+		{[]int{199, 200, 208}, 0, 2, 607},
+	}
+
+	for _, v := range testCases {
+		sum := Sum(v.ns, v.first, v.last)
+		if sum != 607 {
+			t.Fatalf("Expected sum to be %d but was %d", v.sum, sum)
+		}
+
 	}
 }
