@@ -32,6 +32,7 @@ func PartTwo(measurements []int) int {
 	for i := 1; i < len(measurements)-2; i++ {
 		sums = append(sums, Sum(measurements, i, i+2))
 	}
+
 	return 1
 }
 
