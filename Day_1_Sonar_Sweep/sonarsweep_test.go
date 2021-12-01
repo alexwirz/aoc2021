@@ -67,7 +67,7 @@ func TestPartTwoReturns(t *testing.T) {
 
 func TestSumOfArrayWithThreeItems(t *testing.T) {
 	sum := Sum([]int{199, 200, 208}, 0, 2)
-	if sum < 0 {
+	if sum != 607 {
 		t.Fatalf("Expected sum to be 607 but was %d", sum)
 	}
 }
