@@ -38,7 +38,7 @@ func TestExample(t *testing.T) {
 }
 
 func TestWave(t *testing.T) {
-	res := CheckIncreased([]int{12, 1, 14, 10, 42})
+	res := CheckIncreased2([]int{12, 1, 14, 10, 42})
 	if res != 2 {
 		t.Fatalf("expected increase count to be 2, but was %d", res)
 	}
