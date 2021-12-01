@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func CheckIncreased(measurements []int) int {
 	var count int = 0
 	var last int = int(^uint(0) >> 1)
@@ -10,6 +12,7 @@ func CheckIncreased(measurements []int) int {
 		}
 
 		if v > last {
+			fmt.Printf("%d increase (%d)\n", v, last)
 			count++
 		}
 	}
