@@ -34,7 +34,6 @@ func readFile(fname string) (nums []int, err error) {
 	}
 
 	lines := strings.Split(string(b), "\n")
-	// Assign cap to avoid resize on every append.
 	nums = make([]int, 0, len(lines))
 
 	for _, l := range lines {
