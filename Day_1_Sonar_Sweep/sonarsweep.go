@@ -27,6 +27,10 @@ func CheckIncreased(measurements []int) int {
 	return count
 }
 
+func PartTwo(measurements []int) int {
+	return 0
+}
+
 func readFile(fname string) (nums []int, err error) {
 	b, err := ioutil.ReadFile(fname)
 	if err != nil {
