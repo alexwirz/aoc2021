@@ -29,7 +29,7 @@ func CheckIncreased(measurements []int) int {
 
 func PartTwo(measurements []int) int {
 	var sums []int
-	for i := 1; i < len(measurements)-2; i++ {
+	for i := 0; i < len(measurements)-2; i++ {
 		sums = append(sums, Sum(measurements, i, i+2))
 	}
 
