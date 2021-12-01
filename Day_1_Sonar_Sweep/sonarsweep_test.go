@@ -73,6 +73,7 @@ func TestSumOfArrayWithThreeItems(t *testing.T) {
 		sum   int
 	}{
 		{[]int{199, 200, 208}, 0, 2, 607},
+		{[]int{199, 200, 208, 210}, 0, 2, 618},
 	}
 
 	for _, v := range testCases {
