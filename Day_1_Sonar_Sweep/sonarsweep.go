@@ -31,6 +31,10 @@ func PartTwo(measurements []int) int {
 	return 1
 }
 
+func Sum(numbers []int, start, end int) int {
+	return 0
+}
+
 func readFile(fname string) (nums []int, err error) {
 	b, err := ioutil.ReadFile(fname)
 	if err != nil {
