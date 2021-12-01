@@ -22,3 +22,19 @@ func CheckIncreased(measurements []int) int {
 
 	return count
 }
+
+func CheckIncreased2(measurements []int) int {
+	var count int = 0
+	var last int = int(^uint(0) >> 1)
+	fmt.Printf("measurements: %v\n", measurements)
+	for i := 1; i < len(measurements); i++ {
+		if measurements[i] > last {
+			fmt.Printf("%d increase (%d)\n", measurements[i], last)
+			count++
+		}
+
+		last = measurements[i]
+	}
+
+	return count
+}
