@@ -32,7 +32,12 @@ func PartTwo(measurements []int) int {
 }
 
 func Sum(numbers []int, start, end int) int {
-	return 607
+	sum := numbers[start]
+	for i := start + 1; i <= end; i++ {
+		sum += numbers[i]
+	}
+
+	return sum
 }
 
 func readFile(fname string) (nums []int, err error) {
