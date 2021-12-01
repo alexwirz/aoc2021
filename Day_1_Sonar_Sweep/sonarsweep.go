@@ -50,3 +50,11 @@ func readFile(fname string) (nums []int, err error) {
 
 	return nums, nil
 }
+
+func main() {
+	nums, err := readFile("input.txt")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(CheckIncreased(nums))
+}
