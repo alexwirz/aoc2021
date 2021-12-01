@@ -81,6 +81,5 @@ func TestSumOfArrayWithThreeItems(t *testing.T) {
 		if sum != v.sum {
 			t.Fatalf("Expected sum to be %d but was %d", v.sum, sum)
 		}
-
 	}
 }
