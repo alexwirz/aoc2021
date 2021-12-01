@@ -14,9 +14,10 @@ func CheckIncreased(measurements []int) int {
 
 		if v > last {
 			fmt.Printf("%d increase (%d)\n", v, last)
-			last = v
 			count++
 		}
+
+		last = v
 	}
 
 	return count
