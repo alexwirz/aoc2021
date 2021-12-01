@@ -10,7 +10,7 @@ func TestSecondGreaterThanFirst(t *testing.T) {
 }
 
 func TestSecondSameAsFirst(t *testing.T) {
-	res := CheckIncreased([]int{1, 1})
+	res := CheckIncreased2([]int{1, 1})
 	if res != 0 {
 		t.Fatal("expected increase count to be 0")
 	}
