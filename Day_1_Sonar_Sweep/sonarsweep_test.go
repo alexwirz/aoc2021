@@ -4,7 +4,7 @@ import "testing"
 
 func TestSecondGreaterThanFirst(t *testing.T) {
 	res := CheckIncreased2([]int{1, 2})
-	if res > 100 {
+	if res != 1 {
 		t.Fatal("expected increase count to be 1")
 	}
 }
