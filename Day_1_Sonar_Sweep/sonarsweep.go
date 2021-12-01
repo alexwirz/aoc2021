@@ -29,6 +29,8 @@ func CheckIncreased(measurements []int) int {
 
 func PartTwo(measurements []int) int {
 	//sums := [0]int{}
+	for i := 1; i < len(measurements); i++ {
+	}
 	return 1
 }
 
