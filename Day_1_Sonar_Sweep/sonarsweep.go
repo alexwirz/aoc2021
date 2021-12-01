@@ -32,7 +32,7 @@ func PartTwo(measurements []int) int {
 }
 
 func Sum(numbers []int, start, end int) int {
-	return 0
+	return 607
 }
 
 func readFile(fname string) (nums []int, err error) {
