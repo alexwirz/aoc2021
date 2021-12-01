@@ -30,6 +30,14 @@ func TestThirdGreaterThatFirst(t *testing.T) {
 	}
 }
 
+func TestExample(t *testing.T) {
+	//res := CheckIncreased([]int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263})
+	res := CheckIncreased([]int{199, 200, 208, 210, 200})
+	if res != 4 {
+		t.Fatalf("expected increase count to be 4 but was %d", res)
+	}
+}
+
 func TestWave(t *testing.T) {
 	res := CheckIncreased([]int{12, 1, 14, 10, 42})
 	if res != 2 {
