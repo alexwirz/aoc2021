@@ -65,7 +65,7 @@ func TestPartTwoReturns(t *testing.T) {
 	}
 }
 
-func TestSumOfArrayWithThreeItems(t *testing.T) {
+func TestSum(t *testing.T) {
 	var testCases = []struct {
 		ns    []int
 		first int
