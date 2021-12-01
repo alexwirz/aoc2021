@@ -43,3 +43,10 @@ func TestWave(t *testing.T) {
 		t.Fatalf("expected increase count to be 2, but was %d", res)
 	}
 }
+
+func TestPartTwoReturns0(t *testing.T) {
+	res := PartTwo([]int{})
+	if res != 0 {
+		t.Fatal("asd")
+	}
+}
