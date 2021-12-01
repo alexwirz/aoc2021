@@ -73,12 +73,12 @@ func TestSumOfArrayWithThreeItems(t *testing.T) {
 		sum   int
 	}{
 		{[]int{199, 200, 208}, 0, 2, 607},
-		{[]int{199, 200, 208, 210}, 0, 2, 618},
+		{[]int{199, 200, 208, 210}, 1, 3, 618},
 	}
 
 	for _, v := range testCases {
 		sum := Sum(v.ns, v.first, v.last)
-		if sum != 607 {
+		if sum != v.sum {
 			t.Fatalf("Expected sum to be %d but was %d", v.sum, sum)
 		}
 
