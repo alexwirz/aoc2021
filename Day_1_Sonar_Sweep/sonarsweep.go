@@ -29,7 +29,7 @@ func CheckIncreased2(measurements []int) int {
 	}
 
 	var count int = 0
-	var last int = int(^uint(0) >> 1)
+	var last int = measurements[0]
 	fmt.Printf("measurements: %v\n", measurements)
 	for i := 1; i < len(measurements); i++ {
 		if measurements[i] > last {
